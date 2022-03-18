@@ -7,6 +7,10 @@
     "name": "Maxime GRIS",
     "email": "maxime.gris@gmail.com"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/vkaivkaiv/auto_update-test.git"
+  },
   "keywords": [
     "angular",
     "angular 9",
