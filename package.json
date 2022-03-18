@@ -1,15 +1,12 @@
 {
   "name": "angular-electron",
-  "version": "7.2.1",
+  "version": "7.2.2",
   "description": "Angular 9 with Electron (Typescript + SASS + Hot Reload)",
   "homepage": "https://github.com/maximegris/angular-electron",
-  "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
-  },
+  "author": "Maxime GRIS <maxime.gris@gmail.com>",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/vkaivkaiv/auto_update-test.git"
+    "type": "git",
+    "url": "git+https://github.com/vkaivkaiv/auto_update-test.git"
   },
   "keywords": [
     "angular",
@@ -26,7 +23,8 @@
     "postinstall": "electron-builder install-app-deps",
     "ng": "ng",
     "start": "npm-run-all -p electron:serve ng:serve",
-    "build": "npm run electron:serve-tsc && ng build --base-href ./",
+    "build": "electron-builder build --publish never",
+    "deploy": "electron-builder build --publish always",
     "build:dev": "npm run build -- -c dev",
     "build:prod": "npm run build -- -c production",
     "ng:serve": "ng serve",
@@ -96,5 +94,10 @@
   },
   "engines": {
     "node": ">=10.13.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/vkaivkaiv/auto_update-test/issues"
+  },
+  "dependencies": {},
+  "license": "ISC"
 }
